@@ -1,0 +1,79 @@
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0, 74, 173, 0.6), rgba(0, 74, 173, 0.6)), 
+                url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: calc(100vh - 74px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 { 
+    font-size: 3.5rem; 
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* BOTÃO */
+.btn-principal-hero {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+.btn-principal-hero:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* SERVIÇOS HOME */
+.servicos-home {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicos-home h2 {
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1.1rem; }
+}

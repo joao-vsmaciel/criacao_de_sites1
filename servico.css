@@ -1,0 +1,80 @@
+.hero-servicos {
+    background: linear-gradient(rgba(0, 74, 173, 0.6), rgba(0, 74, 173, 0.6)), 
+                url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.servicos-detalhes {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.servico-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.servico-item:hover {
+    transform: translateY(-5px);
+}
+
+.servico-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servico-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.servico-info h3 {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.servico-info p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.voltar-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #003580;
+    transform: scale(1.05);
+}
