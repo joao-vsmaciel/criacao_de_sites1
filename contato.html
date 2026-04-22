@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato - Centro Médico</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="contato.css">
+<link rel="stylesheet" href="common.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="container-nav">
+        <div class="logo">Centro Médico <span>Vitalidade</span></div>
+        <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="profissionais.html">PROFISSIONAIS</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<div class="voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+<div class="container">
+  <h2>Entre em Contato</h2>
+
+  <div class="cards">
+
+    <!-- CARD INFO -->
+    <div class="card">
+      <p><i class="fa-solid fa-location-dot"></i> Rua Saúde, 123 - Juiz de Fora</p>
+      <p><i class="fa-solid fa-clock"></i> 08:00 às 18:00</p>
+      <p><i class="fa-solid fa-phone"></i> (32) 99999-9999</p>
+
+      <!-- WHATS -->
+      <a href="https://wa.me/5532999999999" target="_blank" class="btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <!-- INSTA -->
+      <a href="https://instagram.com" target="_blank" class="btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <!-- FORM -->
+    <div class="card">
+  <input type="text" placeholder="Nome" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="Telefone" 
+       pattern="[0-9]{10,11}" 
+       title="Digite um número válido (DDD + número)">
+
+<textarea placeholder="Mensagem" required></textarea>
+      <button>Enviar</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAPA -->
+<div class="mapa">
+  <iframe src="https://www.google.com/maps?q=Juiz+de+Fora&output=embed"></iframe>
+</div>
+   <footer>
+    <p>© 2026 Centro Médico Vitalidade</p>
+</footer>
+</body>
+</html>
